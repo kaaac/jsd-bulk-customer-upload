@@ -17,6 +17,20 @@ The versions of Jira Service Desk the script has been tested against are.
 |Service Desk Cloud|`cloud`|`2021-01-04`|
 |Service Desk Server|`Not Tested`|`Not Tested`|
 
+## Install
+
+Create virtualenv (optional but recomended)
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Get script and install dependencies
+```
+git clone git@github.com:iokiwi/jsd-bulk-customer-upload.git
+pip install -r requirements.txt
+```
+
 ## Usage
 
 Requires `python >= 3.5`
