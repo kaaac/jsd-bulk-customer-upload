@@ -54,8 +54,8 @@ class ServerCustomerManager(BaseCustomerManager):
 
     def from_dict(self, data):
         return ServerCustomer(
-            name=data["fullName"],
-            email=data["email"],
+            name=data["displayName"],
+            email=data["emailAddress"],
             client=self.client,
         )
 

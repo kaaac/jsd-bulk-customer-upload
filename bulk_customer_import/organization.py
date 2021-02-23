@@ -73,7 +73,7 @@ class CloudOrganizationManager(BaseOrganizationManager):
 
 class ServerOrganizationManager(BaseOrganizationManager):
 
-    fields = ("usernames", "emailAddress")
-
+    #fields = ("usernames", "emailAddress")
+    fields = ("usernames", "email")
     def __init__(self, *args):
         super().__init__(*args)

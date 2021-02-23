@@ -27,7 +27,7 @@ class BaseServicedeskManager(object):
     def add_customer(self, servicedesk, customer):
 
         LOG.info("Adding customer to service desk: %s" % customer)
-
+        LOG.debug(customer)
         data = {self.fields[0]: [customer[self.fields[1]]]}
         LOG.debug(data)
         response = self.client.post(
@@ -69,7 +69,8 @@ class CloudServicedeskManager(BaseServicedeskManager):
 
 class ServerServicedeskManager(BaseServicedeskManager):
 
-    fields = ("usernames", "emailAddress")
+    #fields = ("usernames", "emailAddress")
+    fields = ("usernames", "email")
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
