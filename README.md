@@ -1,8 +1,6 @@
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
-It's become to much of a burden to maintain this script I no longer personally require.
-
-Atlassian have not made it easy to support both Cloud and server as the products and api's have diverged too significantly.
+It's become too much of a burden to maintain this script I no longer personally require. Atlassian have not made it easy to support both Cloud and server as the products and api's have diverged too significantly.
 
 I have gone deep down a rabit hole of trying to support cloud and server versions but in testing and developing the version of the script currently on master I am no longer sure how well server is and cannot dedicate any more time to this.
 
@@ -12,10 +10,11 @@ A script for bulk uploading organizations and customers to Jira Service desk fro
 
 The versions of Jira Service Desk the script has been tested against are.
 
-|Platform|Version|Date Tested|
-|---|---|---|
-|Service Desk Cloud|`cloud`|`2021-01-04`|
-|Service Desk Server|`Not Tested`|`Not Tested`|
+|Platform|Jira Version|Service Desk Version|Date Tested|
+|---|---|---|---|
+|Service Desk Cloud|`cloud`|`cloud`|`2021-01-04`|
+|Service Desk Server|`7.13.11`|`3.16.12`|`2021-02-24`|
+|Service Desk Server|`8.15.0`|`4.15.0`|`2021-02-24`|
 
 ## Install
 
@@ -86,9 +85,12 @@ You can use the docker-compose file included in this repo to spin up a jira serv
 docker-compose up
 ```
 
-This will start a server on http://localhost:8080/jira. You will need to apply a trial license (for free) and setup the instance. Change the image tag to arget different versions of jira service desk.
+This will start a server on http://localhost:8080/jira. You will need to apply a trial license (for free) and setup the instance. Change the image tag to target different versions of jira service desk.
 
-Alternatively, you could use the atlassian [SDK](https://developer.atlassian.com/server/framework/atlassian-sdk/)
+ * [Time Bomb Licenses](https://developer.atlassian.com/platform/marketplace/timebomb-licenses-for-testing-server-apps/)
+ * [Jira/Jira Service Desk Versions ](https://marketplace.atlassian.com/apps/1213632/jira-service-management/version-history)
+
+ Alternatively, you could use the atlassian [SDK](https://developer.atlassian.com/server/framework/atlassian-sdk/)
 
 ### Cloud Development Environment
 Get a cloud development environment here:
