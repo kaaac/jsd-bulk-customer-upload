@@ -42,7 +42,7 @@ usage: python -m bulk_customer_import [-h] [-l LOGLEVEL]
 
 For example:
 ```bash
-python -m bulk_customer_import \
+python3 -m bulk_customer_import \
   "https://mycustomer.atlassian.net" \
   "local-admin" \
   "P4ssw0rd" \
